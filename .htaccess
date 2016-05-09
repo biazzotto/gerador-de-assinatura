@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /assinatura-dinamica/
+RewriteCond %{REQUEST_URI} ^([a-zA-Z0-9]+).jpg   [NC]
+RewriteRule .*             /assets/upload/%1.jpg [R,L,NC]
