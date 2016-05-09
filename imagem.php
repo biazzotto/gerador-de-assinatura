@@ -6,7 +6,7 @@ $cor_funcao = imagecolorallocate($imagem, 75, 75, 75);
 $cor_info   = imagecolorallocate($imagem, 102, 102, 102);
 
 $nome   = urldecode($_GET['nome']);
-$nome_u = mb_strtoupper($nome);
+$nome_u = mb_strtoupper($nome, 'UTF-8');
 $funcao = urldecode($_GET['funcao']);
 
 // imagestring($imagem, 5, 191, 24, $nome, $cor_nome);
